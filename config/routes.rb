@@ -1,6 +1,6 @@
 JewelBrain::Application.routes.draw do
   get "home/index"
-  root 'jewels#index'
+  root 'home#index'
   resources :jewels
 
   # The priority is based upon order of creation: first created -> highest priority.
