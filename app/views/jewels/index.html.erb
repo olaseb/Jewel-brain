@@ -1,0 +1,31 @@
+<h1>Listing jewels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jewels.each do |jewel| %>
+      <tr>
+        <td><%= jewel.name %></td>
+        <td><%= jewel.description %></td>
+        <td><%= jewel.price %></td>
+        <td><%= link_to 'Show', jewel %></td>
+        <td><%= link_to 'Edit', edit_jewel_path(jewel) %></td>
+        <td><%= link_to 'Destroy', jewel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jewel', new_jewel_path %>
