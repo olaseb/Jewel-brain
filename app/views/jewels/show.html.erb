@@ -1,10 +1,6 @@
+<h1><%= @jewel.name %></h1>
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @jewel.name %>
-</p>
-
+<hr />
 <p>
   <strong>Description:</strong>
   <%= @jewel.description %>
@@ -15,5 +11,5 @@
   <%= @jewel.price %>
 </p>
 
-<%= link_to 'Edit', edit_jewel_path(@jewel) %> |
-<%= link_to 'Back', jewels_path %>
+<%= link_to 'Edit', edit_jewel_path(@jewel), class: 'btn btn-success btn-sm' %> |
+<%= link_to 'Back', jewels_path, class: 'btn btn-default btn-sm' %>
