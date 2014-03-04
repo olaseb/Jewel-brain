@@ -11,7 +11,12 @@
 
 <div class= "container">
 	<%= render 'layouts/header' %>
+	<%= render 'layouts/messages' %>   
 	<%= yield %>
 </div>
+
+<script type="text/javascript">
+	$('.alert').delay(7000).fadeOut();
+</script>
 </body>
 </html>
