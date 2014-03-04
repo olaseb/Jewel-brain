@@ -46,6 +46,9 @@ gem "paperclip", "~> 4.1.1"
 # Simple_Form
 gem 'simple_form'
 
+# BootStrap-Sass
+gem 'bootstrap-sass', '~> 3.1.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

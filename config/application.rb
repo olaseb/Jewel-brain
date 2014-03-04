@@ -8,6 +8,7 @@ Bundler.require(:default, Rails.env)
 
 module JewelBrain
   class Application < Rails::Application
+    config.i18n.enforce_available_locales = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -18,7 +19,7 @@ module JewelBrain
     #config.time_zone.name = "Paris" => "Europe/Paris"
     #config.time_zone = 'Paris (Europe/Paris)'
     Time.zone = 'Paris'  # => "Paris"
-    I18n.enforce_available_locales = true
+
 
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
